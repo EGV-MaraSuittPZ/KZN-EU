@@ -7,92 +7,46 @@
 // ==========================================
 
 const matchesData = [
-  {
-    status: "win",
-    date: "15/03/2026",
-    league: "liga_esp",
-    leagueName: "Liga Española R6",
-    leagueLogo: "",
-    opponent: "Penguins",
-    opponentLogo: "",
-    ourScore: 7,
-    opponentScore: 4
+   {
+    opponent: "Euskal", opponentLogo: "Logos/euskal.png",
+    ourScore: 7, opponentScore: 5, status: "win",
+    league: "kom", leagueName: "King of Master",
+    leagueLogo: "kom.png", date: "16 MAY, 2026"
   },
   {
-    status: "loss",
-    date: "22/03/2026",
-    league: "liga_esp",
-    leagueName: "Liga Española R6",
-    leagueLogo: "",
-    opponent: "Scravens",
-    opponentLogo: "",
-    ourScore: 5,
-    opponentScore: 7
+    opponent: "ProdigiFive", opponentLogo: "Logos/p5.png",
+    ourScore: 0, opponentScore: 2, status: "loss",
+    league: "esp", leagueName: "Competición Española",
+    leagueLogo: "competicion_española.png", date: "17 MAY, 2026"
   },
   {
-    status: "win",
-    date: "05/04/2026",
-    league: "copa_spain",
-    leagueName: "Copa Spain",
-    leagueLogo: "",
-    opponent: "YoNaturals",
-    opponentLogo: "",
-    ourScore: 7,
-    opponentScore: 2
+    opponent: "S.O.T", opponentLogo: "Logos/sot.png",
+    ourScore: 7, opponentScore: 5, status: "win",
+    league: "esp", leagueName: "Competición Española",
+    leagueLogo: "competicion_española.png", date: "9 MAY, 2026"
   },
   {
-    status: "loss",
-    date: "12/04/2026",
-    league: "liga_esp",
-    leagueName: "Liga Española R6",
-    leagueLogo: "",
-    opponent: "Razones",
-    opponentLogo: "",
-    ourScore: 3,
-    opponentScore: 7
+    opponent: "(FW)ProdigiFive", opponentLogo: "Logos/p5.png",
+    ourScore: 0, opponentScore: 7, status: "loss",
+    league: "esp", leagueName: "Competición Española",
+    leagueLogo: "competicion_española.png", date: "1 MAY, 2026"
   },
   {
-    status: "win",
-    date: "19/04/2026",
-    league: "copa_spain",
-    leagueName: "Copa Spain",
-    leagueLogo: "",
-    opponent: "G2 Academy",
-    opponentLogo: "",
-    ourScore: 7,
-    opponentScore: 5
+    opponent: "SCRAV", opponentLogo: "Logos/scrav.png",
+    ourScore: 7, opponentScore: 4, status: "win",
+    league: "esp", leagueName: "Competición Española",
+    leagueLogo: "competicion_española.png", date: "25 ABR, 2026"
   },
   {
-    status: "loss",
-    date: "26/04/2026",
-    league: "liga_esp",
-    leagueName: "Liga Española R6",
-    leagueLogo: "",
-    opponent: "Vodafone Giants",
-    opponentLogo: "",
-    ourScore: 6,
-    opponentScore: 8
+    opponent: "YoungCracks", opponentLogo: "Logos/yn.png",
+    ourScore: 8, opponentScore: 6, status: "win",
+    league: "esp", leagueName: "Competición Española",
+    leagueLogo: "competicion_española.png", date: "19 ABR, 2026"
   },
   {
-    status: "upcoming",
-    date: "20/06/2026",
-    league: "liga_esp",
-    leagueName: "Liga Española R6",
-    leagueLogo: "",
-    opponent: "Team Heretics",
-    opponentLogo: "",
-    ourScore: 0,
-    opponentScore: 0
-  },
-  {
-    status: "upcoming",
-    date: "27/06/2026",
-    league: "copa_spain",
-    leagueName: "Copa Spain",
-    leagueLogo: "",
-    opponent: "Movistar Riders",
-    opponentLogo: "",
-    ourScore: 0,
-    opponentScore: 0
+    opponent: "UDR", opponentLogo: "Logos/udr.png",
+    ourScore: 7, opponentScore: 0, status: "win",
+    league: "esp", leagueName: "Competición Española",
+    leagueLogo: "competicion_española.png", date: "12 ABR, 2026"
   },
 ];
