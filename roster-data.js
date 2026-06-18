@@ -10,18 +10,18 @@
 
 const rosterData = [
   // ── JUGADORES ──────────────────────────────────────────
-  { name: "Xx_Druiazul",   role: "jugador", position: "Capitan",     photo: "", twitter: "" },
-  { name: "GwrciaRetun",   role: "jugador", position: "Sub-Capitan", photo: "", twitter: "" },
+  { name: "",   role: "jugador", position: "Capitan",     photo: "", twitter: "" },
+  { name: "",   role: "jugador", position: "Sub-Capitan", photo: "", twitter: "" },
   { name: "qSxntxxx",      role: "jugador", position: "Jugador",     photo: "", twitter: "" },
-  { name: "GABYBEBEE",     role: "jugador", position: "Jugador",     photo: "", twitter: "" },
-  { name: "cepsinn",       role: "jugador", position: "Jugador",     photo: "", twitter: "" },
-  { name: "Byj0s3g0nz",   role: "jugador", position: "Jugador",     photo: "", twitter: "" },
-  { name: "bichoraro454",  role: "jugador", position: "Jugador",     photo: "", twitter: "" },
+  { name: "",     role: "jugador", position: "Jugador",     photo: "", twitter: "" },
+  { name: "",       role: "jugador", position: "Jugador",     photo: "", twitter: "" },
+  { name: "",   role: "jugador", position: "Jugador",     photo: "", twitter: "" },
+  { name: "",  role: "jugador", position: "Jugador",     photo: "", twitter: "" },
   { name: "retwrr",        role: "jugador", position: "Jugador",     photo: "", twitter: "" },
   { name: "rczxo",         role: "jugador", position: "Jugador",     photo: "", twitter: "" },
-  { name: "FrshASG",       role: "jugador", position: "Jugador",     photo: "", twitter: "" },
+  { name: "",       role: "jugador", position: "Jugador",     photo: "", twitter: "" },
 
   // ── DIRECCIÓN ──────────────────────────────────────────
-  { name: "WZA-copeete",   role: "staff",   position: "CEO",         photo: "", twitter: "" },
+  { name: "CxpeteeKNZ",   role: "staff",   position: "CEO",         photo: "", twitter: "" },
   { name: "MaraSuitt_PZ",  role: "staff",   position: "SUB-CEO",     photo: "", twitter: "" },
 ];
