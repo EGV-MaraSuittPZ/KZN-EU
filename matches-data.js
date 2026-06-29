@@ -9,7 +9,7 @@
 const matchesData = [
    {
     opponent: "", opponentLogo: "",
-    ourScore: , opponentScore: , status: "",
+    ourScore: 0, opponentScore: 0, status: "",
     league: "", leagueName: "",
     leagueLogo: "", date: ""
   },
