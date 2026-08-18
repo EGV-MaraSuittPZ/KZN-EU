@@ -8,10 +8,10 @@
 
 const matchesData = [
    {
-    opponent: "YoungCracks", opponentLogo: "Logos/X5.png",
-    ourScore: 2, opponentScore: 0, status: "win",
+    opponent: "YoungCracks", opponentLogo: "Logos/yn.png",
+    ourScore: 1, opponentScore: 2, status: "Lose",
     league: "?", leagueName: "Ethenal EU ",
-    leagueLogo: "Logos/ethlegue.png", date: "27/07/2026"
+    leagueLogo: "Logos/ethlegue.png", date: "20/07/2026"
   },
 ];
 
