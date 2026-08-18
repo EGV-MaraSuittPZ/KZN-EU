@@ -26,26 +26,26 @@ const matchesData = [
 
 const matchesData = [
    {
-    opponent: "MafiaWars", opponentLogo: "Logos/X5.png",
+    opponent: "MafiaWars", opponentLogo: "Logos/mafia.png",
     ourScore: 2, opponentScore: 0, status: "win",
     league: "?", leagueName: "Ethenal EU ",
-    leagueLogo: "Logos/ethlegue.png", date: "27/07/2026"
+    leagueLogo: "Logos/ethlegue.png", date: "3/08/2026"
   },
 ];
 
 const matchesData = [
    {
-    opponent: "Scrav", opponentLogo: "Logos/X5.png",
+    opponent: "Scrav", opponentLogo: "Logos/scrav.png",
     ourScore: 2, opponentScore: 0, status: "win",
     league: "?", leagueName: "Ethenal EU ",
-    leagueLogo: "Logos/ethlegue.png", date: "27/07/2026"
+    leagueLogo: "Logos/ethlegue.png", date: "10/08/2026"
   },
    
 ];
 const matchesData = [
    {
-    opponent: "Wars", opponentLogo: "Logos/X5.png",
-    ourScore: 2, opponentScore: 0, status: "win",
+    opponent: "Wars", opponentLogo: "Logos/wars.png",
+    ourScore: 2, opponentScore: 1, status: "win",
     league: "?", leagueName: "Ethenal EU ",
     leagueLogo: "Logos/ethlegue.png", date: "27/07/2026"
   },
@@ -53,8 +53,8 @@ const matchesData = [
 
 const matchesData = [
    {
-    opponent: "ZND", opponentLogo: "Logos/X5.png",
-    ourScore: 2, opponentScore: 0, status: "win",
+    opponent: "ZND", opponentLogo: "Logos/znd.png",
+    ourScore: o, opponentScore: 0, status: "upcoming",
     league: "?", leagueName: "Ethenal EU ",
     leagueLogo: "Logos/ethlegue.png", date: "27/07/2026"
   },
