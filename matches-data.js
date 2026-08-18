@@ -9,7 +9,7 @@
 const matchesData = [
    {
     opponent: "YoungCracks🇪🇸 (j1)", opponentLogo: "Logos/yn.png",
-    ourScore: 1, opponentScore: 2, status: "Lose",
+    ourScore: 1, opponentScore: 2, status: "Loss",
     league: "?", leagueName: "Ethenal EU ",
     leagueLogo: "Logos/ethlegue.png", date: "20/07/2026"
   },
@@ -54,7 +54,7 @@ const matchesData = [
 const matchesData = [
    {
     opponent: "ZND (Final)", opponentLogo: "Logos/znd.png",
-    ourScore: o, opponentScore: 0, status: "upcoming",
+    ourScore: 0, opponentScore: 0, status: "upcoming",
     league: "?", leagueName: "Ethenal EU ",
     leagueLogo: "Logos/ethlegue.png", date: "27/07/2026"
   },
