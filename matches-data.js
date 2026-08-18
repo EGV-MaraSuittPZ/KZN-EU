@@ -8,7 +8,7 @@
 
 const matchesData = [
    {
-    opponent: "YoungCracks", opponentLogo: "Logos/yn.png",
+    opponent: "YoungCracks🇪🇸 (j1)", opponentLogo: "Logos/yn.png",
     ourScore: 1, opponentScore: 2, status: "Lose",
     league: "?", leagueName: "Ethenal EU ",
     leagueLogo: "Logos/ethlegue.png", date: "20/07/2026"
@@ -17,7 +17,7 @@ const matchesData = [
 
 const matchesData = [
    {
-    opponent: "X5 🇫🇷", opponentLogo: "Logos/X5.png",
+    opponent: "X5 🇫🇷 (j2)", opponentLogo: "Logos/X5.png",
     ourScore: 2, opponentScore: 0, status: "win",
     league: "?", leagueName: "Ethenal EU ",
     leagueLogo: "Logos/ethlegue.png", date: "27/07/2026"
@@ -26,7 +26,7 @@ const matchesData = [
 
 const matchesData = [
    {
-    opponent: "MafiaWars", opponentLogo: "Logos/mafia.png",
+    opponent: "MafiaWars 🇮🇹🇵🇹 (j3)", opponentLogo: "Logos/mafia.png",
     ourScore: 2, opponentScore: 0, status: "win",
     league: "?", leagueName: "Ethenal EU ",
     leagueLogo: "Logos/ethlegue.png", date: "3/08/2026"
@@ -35,7 +35,7 @@ const matchesData = [
 
 const matchesData = [
    {
-    opponent: "Scrav", opponentLogo: "Logos/scrav.png",
+    opponent: "Scrav🇪🇸 (quarterF)", opponentLogo: "Logos/scrav.png",
     ourScore: 2, opponentScore: 0, status: "win",
     league: "?", leagueName: "Ethenal EU ",
     leagueLogo: "Logos/ethlegue.png", date: "10/08/2026"
@@ -44,7 +44,7 @@ const matchesData = [
 ];
 const matchesData = [
    {
-    opponent: "Wars", opponentLogo: "Logos/wars.png",
+    opponent: "Wars🇫🇷🇦🇪 (semiF)", opponentLogo: "Logos/wars.png",
     ourScore: 2, opponentScore: 1, status: "win",
     league: "?", leagueName: "Ethenal EU ",
     leagueLogo: "Logos/ethlegue.png", date: "27/07/2026"
@@ -53,7 +53,7 @@ const matchesData = [
 
 const matchesData = [
    {
-    opponent: "ZND", opponentLogo: "Logos/znd.png",
+    opponent: "ZND (Final)", opponentLogo: "Logos/znd.png",
     ourScore: o, opponentScore: 0, status: "upcoming",
     league: "?", leagueName: "Ethenal EU ",
     leagueLogo: "Logos/ethlegue.png", date: "27/07/2026"
