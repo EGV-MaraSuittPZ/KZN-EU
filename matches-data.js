@@ -39,7 +39,7 @@ const matchesData = [
     opponent: "Wars🇫🇷🇦🇪 (semiF)", opponentLogo: "Logos/wars.png",
     ourScore: 2, opponentScore: 1, status: "win",
     league: "?", leagueName: "Ethenal EU ",
-    leagueLogo: "Logos/ethlegue.png", date: "27/07/2026"
+    leagueLogo: "Logos/ethlegue.png", date: "17/08/2026"
   },
 
    {
