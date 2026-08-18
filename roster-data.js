@@ -10,11 +10,11 @@
 
 const rosterData = [
   // ── JUGADORES ──────────────────────────────────────────
-  { name: "MxzanKZN",   role: "jugador", position: "Capitan",     photo: "", twitter: "" },
-  { name: "JotaBe98",   role: "jugador", position: "Sub-Capitan", photo: "", twitter: "" },
+  { name: "JotaBe98",   role: "jugador", position: "", photo: "", twitter: "" },
+  { name: "DylanRZN",   role: "jugador", position: "IGL", photo: "", twitter: "" },
   { name: "inmakevin",      role: "jugador", position: "",     photo: "", twitter: "" },
-  { name: "ShxdoKZN",     role: "jugador", position: "",     photo: "", twitter: "" },
-  { name: "FBI_Ian_07",       role: "jugador", position: "",     photo: "", twitter: "" },
+  { name: "Aztera",     role: "jugador", position: "",     photo: "", twitter: "" },
+  { name: "FBI_Ian_07",       role: "jugador", position: "Sub-IGL",     photo: "", twitter: "" },
   { name: "Useer00_",   role: "jugador", position: "",     photo: "", twitter: "" },
   { name: "Blxckmr",  role: "jugador", position: "",     photo: "", twitter: "" },
   { name: "retwrr",        role: "jugador", position: "",     photo: "", twitter: "" },
