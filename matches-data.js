@@ -44,9 +44,9 @@ const matchesData = [
 
    {
     opponent: "ZND (Final)", opponentLogo: "Logos/znd.png",
-    ourScore: 0, opponentScore: 0, status: "upcoming",
+    ourScore: 2, opponentScore: 3, status: "loss",
     league: "?", leagueName: "Ethenal EU ",
-    leagueLogo: "Logos/ethlegue.png", date: "00/08/2026"
+    leagueLogo: "Logos/ethlegue.png", date: "22/08/2026"
   },
 ];
 
