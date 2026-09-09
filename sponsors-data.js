@@ -17,4 +17,11 @@ const sponsorsData = [
     logo: "DUBBY.png",
     link: "https://www.dubby.gg/discount/KAIZENEU?ref=rsovktaj"
   }
+   {
+    name: "Instant Gaming",
+    tag: "PARTNER",
+    description: "Ayudanos usando el enlace de afiliado KAIZENEU",
+    logo: "",
+    link: ""
+  }
 ];
