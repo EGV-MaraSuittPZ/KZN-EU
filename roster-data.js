@@ -20,7 +20,7 @@ const rosterData = [
   { name: "iCanxriio",        role: "jugador", position: "",     photo: "", twitter: "" },
   { name: "rczxo",         role: "jugador", position: "",     photo: "", twitter: "" },
   { name: "xLakii-",  role: "jugador", position: "",     photo: "", twitter: "" },
-  { name: "xRweeze",       role: "jugador", position: "",     photo: "", twitter: "" },
+  
  
   // ── DIRECCIÓN ──────────────────────────────────────────
   { name: "CxpeteeKNZ",   role: "staff",   position: "CEO",         photo: "", twitter: "" },
