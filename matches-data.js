@@ -10,7 +10,7 @@ const matchesData = [
 
 
      {
-    opponent: "ZND (Final)", opponentLogo: "Logos/yn.png",
+    opponent: "Vora", opponentLogo: "Logos/yn.png",
     ourScore: 7, opponentScore: 0, status: "win",
     league: "?", leagueName: "Scrim",
     leagueLogo: "", date: "13/08/2026"
