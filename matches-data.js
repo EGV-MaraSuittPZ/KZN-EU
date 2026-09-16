@@ -15,6 +15,13 @@ const matchesData = [
     league: "Scrim", leagueName: "Scrim",
     leagueLogo: "", date: "13/08/2026"
   },
+
+      {
+    opponent: "Ascenix", opponentLogo: "Logos/.png",
+    ourScore: 7, opponentScore: 2, status: "win",
+    league: "Scrim", leagueName: "Scrim",
+    leagueLogo: "", date: "27/07/2026"
+  },
    
    {
     opponent: "ZND (Final)", opponentLogo: "Logos/znd.png",
@@ -56,13 +63,6 @@ const matchesData = [
     ourScore: 1, opponentScore: 2, status: "loss",
     league: "Ethenal EU", leagueName: "Ethenal EU ",
     leagueLogo: "Logos/ethlegue.png", date: "20/07/2026"
-  },
-   
-   {
-    opponent: "X5 🇫🇷 (j2)", opponentLogo: "Logos/X5.png",
-    ourScore: 2, opponentScore: 0, status: "win",
-    league: "Ethenal EU", leagueName: "Ethenal EU ",
-    leagueLogo: "Logos/ethlegue.png", date: "27/07/2026"
   },
    
 ];
