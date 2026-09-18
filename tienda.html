@@ -450,9 +450,8 @@ function toggleMenu() {
   m.classList.toggle('open');
 }
 
-// ── Countdown (90 días desde hoy al lanzar la web) ──
-// CAMBIA ESTA FECHA cuando quieras ajustar el contador:
-const TARGET_DATE = new Date('2026-09-27T00:00:00').getTime();
+// ── Countdown de apertura ──
+const TARGET_DATE = new Date('2026-10-28T23:59:59+02:00').getTime();
 
 function updateCountdown() {
   const now = Date.now();
