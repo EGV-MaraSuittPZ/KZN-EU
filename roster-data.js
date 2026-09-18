@@ -15,7 +15,7 @@ const rosterData = [
   { name: "inmakevin",      role: "jugador", position: "",     photo: "", twitter: "" },
   { name: "Qzteraa",     role: "jugador", position: "",     photo: "", twitter: "" },
   { name: "FBI_Ian_07",       role: "jugador", position: "Sub-IGL",     photo: "", twitter: "" },
-  { name: "Useer00_",   role: "jugador", position: "",     photo: "", twitter: "" },
+  // { name: "Useer00_",   role: "jugador", position: "",     photo: "", twitter: "" },
   { name: "Blxckmr",  role: "jugador", position: "",     photo: "", twitter: "" },
   { name: "iCanxriio",        role: "jugador", position: "",     photo: "", twitter: "" },
   { name: "rczxo",         role: "jugador", position: "",     photo: "", twitter: "" },
