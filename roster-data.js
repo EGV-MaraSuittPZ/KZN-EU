@@ -22,8 +22,8 @@ const rosterData = [
 
   // ── JUGADORES FACTORY ───────────────────────────────────
   { name: "JotaBe98",      role: "factory", position: "IGL", photo: "", instagram: "" },
-  { name: "MaraSuitt_PZ",  role: "factory", position: "",    photo: "", instagram: "" },
-  { name: "CxpeteeKNZ",    role: "factory", position: "",    photo: "", instagram: "" },
+  { name: "MaraSuitt_PZ",  role: "factory", position: "",    photo: "", instagram: "MaraSuitt_PZ" },
+  { name: "Wza-Copetee",    role: "factory", position: "",    photo: "", instagram: "CxpeteeKNZ" },
   { name: "inmakevin",     role: "factory", position: "",    photo: "", instagram: "" },
   { name: "xLakii-",       role: "factory", position: "",    photo: "", instagram: "" },
   { name: "",              role: "factory", position: "",    photo: "", instagram: "" },
@@ -33,6 +33,6 @@ const rosterData = [
   { name: "",              role: "factory", position: "",    photo: "", instagram: "" },
 
   // ── DIRECCIÓN ──────────────────────────────────────────
-  { name: "CxpeteeKNZ",   role: "staff", position: "CEO",     photo: "", instagram: "" },
+  { name: "CxpeteeKNZ",   role: "staff", position: "CEO",     photo: "", instagram: "CxpeteeKNZ" },
   { name: "MaraSuitt_PZ", role: "staff", position: "SUB-CEO", photo: "", instagram: "" },
 ];
