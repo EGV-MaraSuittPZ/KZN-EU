@@ -37,10 +37,14 @@ function buildCard(p, index, extraClass) {
         <div class="mw-name">${p.name || "TBD"}</div>
         ${p.position ? `<div class="mw-pos">${p.position}</div>` : ""}
       </div>
-      ${p.twitter ? `
+      ${p.instagram ? `
         <div class="mw-social-popup">
-          <a href="https://x.com/${p.twitter}" target="_blank" title="Twitter/X">
-            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <a href="https://www.instagram.com/${p.instagram}/" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="#fff" stroke-width="2"/>
+              <circle cx="12" cy="12" r="4" fill="none" stroke="#fff" stroke-width="2"/>
+              <circle cx="18" cy="6" r="1.2" fill="#fff"/>
+            </svg>
           </a>
         </div>` : ""}
     </div>`;
