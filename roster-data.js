@@ -2,7 +2,7 @@
 //  ROSTER — edita aquí
 //  Campos:
 //    name     → nick del jugador
-//    role     → "jugador" | "streamer" | "staff"
+//    role     → "jugador" | "factory" | "streamer" | "staff"
 //    position → cargo visible (ej: "Capitan", "CEO", "Jugador")
 //    photo    → ruta a la foto (carpeta Jugadores/) o "" para usar iniciales
 //    twitter  → handle de Twitter/X sin @ (opcional)
@@ -21,6 +21,8 @@ const rosterData = [
   { name: "rczxo",         role: "jugador", position: "",     photo: "", twitter: "" },
   { name: "xLakii-",  role: "jugador", position: "",     photo: "", twitter: "" },
   
+  // ── JUGADORES FACTORY ───────────────────────────────────
+  // Añade aquí jugadores de Factory con role: "factory".
  
   // ── DIRECCIÓN ──────────────────────────────────────────
   { name: "CxpeteeKNZ",   role: "staff",   position: "CEO",         photo: "", twitter: "" },

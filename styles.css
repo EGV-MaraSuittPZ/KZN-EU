@@ -496,6 +496,12 @@ section:nth-child(even) { background: rgba(0,0,0,0.35) !important; }
   gap: 16px; flex-wrap: wrap; max-width: 700px; margin: 0 auto;
 }
 .mw-sub-grid .mw-player-card { width: 180px; flex-shrink: 0; }
+.mw-factory-empty {
+  color: #777; font-family: var(--font-mono); font-size: 0.72rem;
+  letter-spacing: 1px; margin: 0;
+}
+.factory-subsection .mw-subsection-title,
+.factory-subsection .mw-factory-empty { color: #b58aff; }
 
 /* Tarjeta jugador */
 .mw-player-card {
@@ -639,6 +645,20 @@ section:nth-child(even) { background: rgba(0,0,0,0.35) !important; }
 .streamer-card .mw-info::before { background: linear-gradient(90deg, transparent, rgba(145,70,255,0.6), transparent); }
 .streamer-card .mw-social-popup { border-top-color: rgba(145,70,255,0.8); }
 .streamer-card .mw-social-popup a:hover { background: rgba(145,70,255,0.9); border-color: rgba(145,70,255,0.9); }
+
+/* Jugadores Factory (morado) — aislado para no alterar los colores existentes */
+.factory-card { border-color: rgba(145,70,255,0.1); }
+.factory-card:hover { border-color: rgba(145,70,255,0.45); box-shadow: 0 25px 50px rgba(145,70,255,0.08); }
+.factory-card .mw-avatar-bg { background: linear-gradient(180deg, rgba(145,70,255,0.03) 0%, rgba(145,70,255,0.1) 100%); }
+.factory-card .mw-initial { color: rgba(145,70,255,0.2); }
+.factory-card:hover .mw-initial { color: rgba(145,70,255,0.45); text-shadow: 0 0 40px rgba(145,70,255,0.3); }
+.factory-card .mw-glow { background: radial-gradient(ellipse at bottom, rgba(145,70,255,0.12) 0%, transparent 70%); }
+.factory-card .mw-num { color: rgba(145,70,255,0.5); }
+.factory-card .mw-badge { background: rgba(145,70,255,0.85); color: #fff; }
+.factory-card .mw-info::before { background: linear-gradient(90deg, transparent, rgba(145,70,255,0.6), transparent); }
+.factory-card .mw-social-popup { border-top-color: rgba(145,70,255,0.8); }
+.factory-card .mw-social-popup a { border-color: rgba(145,70,255,0.25); }
+.factory-card .mw-social-popup a:hover { background: rgba(145,70,255,0.9); border-color: rgba(145,70,255,0.9); }
 
 /* ===================== RESULTS ===================== */
 .results-filter-row {

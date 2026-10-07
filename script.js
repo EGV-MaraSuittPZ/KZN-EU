@@ -53,6 +53,7 @@ function renderRoster() {
   if (!grid) return;
 
   const jugadores  = rosterData.filter(p => p.role === "jugador"  && p.name);
+  const factory    = rosterData.filter(p => p.role === "factory"  && p.name);
   const streamers  = rosterData.filter(p => p.role === "streamer" && p.name);
   const direccion  = rosterData.filter(p => p.role === "staff"    && p.name);
 
@@ -60,6 +61,15 @@ function renderRoster() {
 
   if (!subs) return;
   subs.innerHTML = "";
+
+  subs.innerHTML += `
+    <div class="mw-subsection factory-subsection">
+      <div class="mw-subsection-title">// Jugadores Factory</div>
+      ${factory.length > 0
+        ? `<div class="mw-sub-grid">${factory.map((p, i) => buildCard(p, i, "factory-card")).join("")}</div>`
+        : `<p class="mw-factory-empty">Aún no hay jugadores añadidos.</p>`
+      }
+    </div>`;
 
   if (streamers.length > 0) {
     subs.innerHTML += `
