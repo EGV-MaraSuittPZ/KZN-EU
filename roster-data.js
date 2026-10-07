@@ -10,20 +10,27 @@
 
 const rosterData = [
   // ── JUGADORES ──────────────────────────────────────────
-  { name: "JotaBe98",   role: "jugador", position: "", photo: "", twitter: "" },
-  { name: "DylanRZN",   role: "jugador", position: "IGL", photo: "", twitter: "" },
-  { name: "inmakevin",      role: "jugador", position: "",     photo: "", twitter: "" },
-  { name: "Qzteraa",     role: "jugador", position: "",     photo: "", twitter: "" },
-  { name: "FBI_Ian_07",       role: "jugador", position: "Sub-IGL",     photo: "", twitter: "" },
-  // { name: "Useer00_",   role: "jugador", position: "",     photo: "", twitter: "" },
-  { name: "Blxckmr",  role: "jugador", position: "",     photo: "", twitter: "" },
-  { name: "iCanxriio",        role: "jugador", position: "",     photo: "", twitter: "" },
-  { name: "rczxo",         role: "jugador", position: "",     photo: "", twitter: "" },
-  { name: "xLakii-",  role: "jugador", position: "",     photo: "", twitter: "" },
+  { name: "DylanRZN",   role: "jugador", position: "CAP", photo: "", twitter: "" },
+  { name: "Qzteraa",   role: "jugador", position: "", photo: "", twitter: "" },
+  { name: "iCanxriio",      role: "jugador", position: "",     photo: "", twitter: "" },
+  { name: "Paulita02",     role: "jugador", position: "",     photo: "", twitter: "" },
+  { name: "",       role: "jugador", position: "",     photo: "", twitter: "" },
+  { name: "FBI_Ian_07",  role: "jugador", position: "",     photo: "", twitter: "" },
+  { name: "",        role: "jugador", position: "",     photo: "", twitter: "" },
+  { name: "",         role: "jugador", position: "",     photo: "", twitter: "" },
   
   // ── JUGADORES FACTORY ───────────────────────────────────
-  // Añade aquí jugadores de Factory con role: "factory".
- 
+   { name: "JotaBe98",   role: "factory", position: "IGL", photo: "", twitter: "" },
+   { name: "MaraSuitt_PZ",  role: "factory",   position: "",     photo: "", twitter: "" },
+   { name: "CxpeteeKNZ",   role: "factory",   position: "",         photo: "", twitter: "" },
+   { name: "inmakevin",      role: "factory", position: "",     photo: "", twitter: "" },
+   { name: "xLakii-",  role: "factory", position: "",     photo: "", twitter: "" },
+   { name: "",  role: "factory", position: "",     photo: "", twitter: "" },
+   { name: "",  role: "factory", position: "",     photo: "", twitter: "" },
+   { name: "",  role: "factory", position: "",     photo: "", twitter: "" },
+   { name: "",  role: "factory", position: "",     photo: "", twitter: "" },
+   { name: "",  role: "factory", position: "",     photo: "", twitter: "" },
+  
   // ── DIRECCIÓN ──────────────────────────────────────────
   { name: "CxpeteeKNZ",   role: "staff",   position: "CEO",         photo: "", twitter: "" },
   { name: "MaraSuitt_PZ",  role: "staff",   position: "SUB-CEO",     photo: "", twitter: "" },
