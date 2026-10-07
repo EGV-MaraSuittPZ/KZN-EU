@@ -16,7 +16,7 @@ const sponsorsData = [
     description: "Consigue un 10% de descuento en Dubby usando el código KAIZENEU.",
     logo: "DUBBY.png",
     link: "https://www.dubby.gg/discount/KAIZENEU?ref=rsovktaj"
-  }
+  },
    {
     name: "Instant Gaming",
     tag: "PARTNER",
