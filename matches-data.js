@@ -8,6 +8,14 @@
 
 const matchesData = [
 
+
+  {
+    opponent: "HVK", opponentLogo: "Logos/.png",
+    ourScore: 4, opponentScore: 7, status: "loss",
+    league: "Scrim", leagueName:2 "InvictusEU",
+    leagueLogo: "", date: "04/10/2026"
+  },
+  
   {
     opponent: "R.O.V.E", opponentLogo: "Logos/.png",
     ourScore: 7, opponentScore: 2, status: "win",
