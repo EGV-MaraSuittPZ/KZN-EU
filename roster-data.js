@@ -11,14 +11,14 @@
 
 const rosterData = [
   // ── JUGADORES ──────────────────────────────────────────
-  { name: "DylanRZN",   role: "jugador", position: "CAP", photo: "", instagram: "" },
-  { name: "Qzteraa",   role: "jugador", position: "", photo: "", instagram: "" },
-  { name: "iCanxriio",      role: "jugador", position: "",     photo: "", instagram: "" },
-  { name: "Paulita02",     role: "jugador", position: "",     photo: "", instagram: "" },
-  { name: "",       role: "jugador", position: "",     photo: "", instagram: "" },
+  { name: "DylanRZN",    role: "jugador", position: "CAP", photo: "", instagram: "" },
+  { name: "Qzteraa",     role: "jugador", position: "", photo: "", instagram: "" },
+  { name: "iCanxriio",   role: "jugador", position: "",     photo: "", instagram: "" },
+  { name: "Paulita02",   role: "jugador", position: "",     photo: "", instagram: "" },
+  { name: "",            role: "jugador", position: "",     photo: "", instagram: "" },
   { name: "FBI_Ian_07",  role: "jugador", position: "",     photo: "", instagram: "" },
-  { name: "",        role: "jugador", position: "",     photo: "", instagram: "" },
-  { name: "",         role: "jugador", position: "",     photo: "", instagram: "" },
+  { name: "",            role: "jugador", position: "",     photo: "", instagram: "" },
+  { name: "",            role: "jugador", position: "",     photo: "", instagram: "" },
 
   // ── JUGADORES FACTORY ───────────────────────────────────
   { name: "JotaBe98",      role: "factory", position: "IGL", photo: "", instagram: "" },
