@@ -30,7 +30,7 @@ const rosterData = [
   { name: "KarI0s-tc",     role: "factory", position: "",    photo: "", instagram: "" },
   { name: "FrxgerGN",      role: "factory", position: "",    photo: "", instagram: "" },
   { name: "RomeritosLNC",  role: "factory", position: "",    photo: "", instagram: "" },
-  { name: " ",      role: "factory", position: "",    photo: "", instagram: "" },
+  { name: "LeonLNC",      role: "factory", position: "",    photo: "", instagram: "" },
 
   // ── DIRECCIÓN ──────────────────────────────────────────
   { name: "CxpeteeKNZ",   role: "staff", position: "CEO",     photo: "", instagram: "CxpeteeKNZ" },
