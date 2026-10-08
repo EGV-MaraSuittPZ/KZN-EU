@@ -1,6 +1,7 @@
 // ==========================================
 //  PARTIDOS — edita aquí
 //  status: "win" | "loss" | "upcoming"
+//  team: "kaizen" | "factory" (opcional; si se omite, se considera "kaizen")
 //  league: clave interna (sin espacios)
 //  leagueName: nombre visible
 //  leagueLogo: ruta a logo de liga (opcional)

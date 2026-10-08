@@ -119,21 +119,32 @@ function renderMvp() {
 // ── Partidos ──────────────────────────────────────────
 let activeStatus = "all";
 let activeLeague = "all";
+let activeTeam = "kaizen";
+
+function getActiveTeamMatches() {
+  return matchesData.filter(match => (match.team || "kaizen").toLowerCase() === activeTeam);
+}
 
 function renderMatches() {
   const container = document.getElementById("matches-list");
   if (!container) return;
   container.innerHTML = "";
 
-  const filtered = matchesData.filter(m => {
+  const teamMatches = getActiveTeamMatches();
+  const filtered = teamMatches.filter(m => {
     const okStatus = activeStatus === "all" || m.status === activeStatus;
     const okLeague = activeLeague === "all" || m.league === activeLeague;
     return okStatus && okLeague;
   });
 
   if (filtered.length === 0) {
+    const emptyMessage = teamMatches.length === 0
+      ? (activeTeam === "factory"
+        ? 'Aún no hay partidos de FACTORY. Añádelos en matches-data.js con team: "factory".'
+        : "Aún no hay partidos para este equipo.")
+      : "No hay partidos con este filtro.";
     container.innerHTML = `<div style="text-align:center;color:#888;padding:40px;
-      font-family:'Share Tech Mono',monospace;">No hay partidos con este filtro.</div>`;
+      font-family:'Share Tech Mono',monospace;">${emptyMessage}</div>`;
     return;
   }
 
@@ -163,7 +174,7 @@ function renderMatches() {
       <div style="display:flex;justify-content:space-between;align-items:center;gap:15px;">
         <div style="display:flex;align-items:center;gap:12px;flex:1;justify-content:flex-end;">
           <span style="color:#fff;font-family:'Bebas Neue',sans-serif;font-weight:700;
-            font-size:1.2rem;text-transform:uppercase;">KAIZEN</span>
+            font-size:1.2rem;text-transform:uppercase;">${activeTeam === "factory" ? "FACTORY" : "KAIZEN"}</span>
           <img src="Logos/logo.png" alt="" style="height:35px;width:35px;object-fit:contain;"
             onerror="this.style.display='none'">
         </div>
@@ -201,7 +212,7 @@ function buildLeagueFilters() {
   if (!container) return;
 
   const ligas = {};
-  matchesData.forEach(m => {
+  getActiveTeamMatches().forEach(m => {
     if (m.league && !ligas[m.league]) {
       ligas[m.league] = { name: m.leagueName, logo: m.leagueLogo || "" };
     }
@@ -224,6 +235,31 @@ function buildLeagueFilters() {
       container.querySelectorAll(".res-filter").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
       activeLeague = btn.getAttribute("data-league");
+      renderMatches();
+    });
+  });
+}
+
+function initMatchTeamFilters() {
+  const container = document.getElementById("match-team-filters");
+  if (!container) return;
+
+  container.querySelectorAll(".match-team-button").forEach(button => {
+    button.addEventListener("click", () => {
+      activeTeam = button.getAttribute("data-team");
+      activeStatus = "all";
+      activeLeague = "all";
+
+      container.querySelectorAll(".match-team-button").forEach(teamButton => {
+        const isActive = teamButton === button;
+        teamButton.classList.toggle("active", isActive);
+        teamButton.setAttribute("aria-pressed", String(isActive));
+      });
+      document.querySelectorAll("#status-filters .res-filter").forEach(statusButton => {
+        statusButton.classList.toggle("active", statusButton.getAttribute("data-status") === "all");
+      });
+
+      buildLeagueFilters();
       renderMatches();
     });
   });
@@ -507,9 +543,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const ticker = document.getElementById("ticker-inner");
   if (ticker) {
     const items = matchesData.map(m => {
-      if (m.status === "upcoming") return `PRÓXIMO: KAIZEN vs ${m.opponent.toUpperCase()} (${m.date})`;
-      if (m.status === "win")      return `✓ KAIZEN ${m.ourScore} - ${m.opponentScore} ${m.opponent.toUpperCase()}`;
-      return `✗ KAIZEN ${m.ourScore} - ${m.opponentScore} ${m.opponent.toUpperCase()}`;
+      const teamName = (m.team || "kaizen").toLowerCase() === "factory" ? "FACTORY" : "KAIZEN";
+      if (m.status === "upcoming") return `PRÓXIMO: ${teamName} vs ${m.opponent.toUpperCase()} (${m.date})`;
+      if (m.status === "win")      return `✓ ${teamName} ${m.ourScore} - ${m.opponentScore} ${m.opponent.toUpperCase()}`;
+      return `✗ ${teamName} ${m.ourScore} - ${m.opponentScore} ${m.opponent.toUpperCase()}`;
     });
     const text = items.join("   ///   ") + "   ///   ";
     ticker.textContent = text + text;
@@ -519,6 +556,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderRoster();
   renderMvp();
   renderTimeline();
+  initMatchTeamFilters();
   buildLeagueFilters();
   renderMatches();
   renderAchievements();

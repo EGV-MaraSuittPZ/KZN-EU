@@ -337,8 +337,13 @@ Discord
 <!-- RESULTS -->
 <section id="results">
   <div class="container">
-    <div class="section-eyebrow">// HISTORIAL DE PARTIDOS</div>
-    <h2 class="section-heading">RESULTADOS</h2>
+    <div class="section-eyebrow">// PARTIDOS</div>
+    <h2 class="section-heading">PARTIDOS</h2>
+
+    <div class="match-team-switch" id="match-team-filters" role="group" aria-label="Equipo">
+      <button class="match-team-button active" type="button" data-team="kaizen" aria-pressed="true">KAIZEN</button>
+      <button class="match-team-button" type="button" data-team="factory" aria-pressed="false">FACTORY</button>
+    </div>
 
     <div class="results-filter-row" id="status-filters">
       <button class="res-filter active" data-status="all">Todos</button>
@@ -349,7 +354,7 @@ Discord
 
     <div class="results-filter-row league-filters" id="league-filters" style="margin-top: 12px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"></div>
 
-    <div id="matches-list" style="margin-top: 30px; display: flex; flex-direction: column; gap: 12px;"></div>
+    <div id="matches-list" style="margin-top: 30px; display: flex; flex-direction: column; gap: 12px;" aria-live="polite"></div>
   </div>
 </section>
 
