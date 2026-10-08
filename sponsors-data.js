@@ -14,7 +14,7 @@ const sponsorsData = [
     name: "Dubby",
     tag: "PARTNER",
     description: "Consigue un 10% de descuento en Dubby usando el código KAIZENEU.",
-    logo: "DUBBY.png",
+    logo: "DUBBY.webp",
     link: "https://www.dubby.gg/discount/KAIZENEU?ref=rsovktaj"
   },
    {

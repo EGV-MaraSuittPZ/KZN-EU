@@ -164,7 +164,7 @@ function renderMatches() {
       <div style="display:flex;justify-content:space-between;align-items:center;
         border-bottom:1px solid rgba(255,255,255,0.05);padding-bottom:8px;">
         <div style="display:flex;align-items:center;gap:8px;">
-          ${match.leagueLogo ? `<img src="${match.leagueLogo}" alt="" style="height:18px;">` : ""}
+          ${match.leagueLogo ? `<img src="${match.leagueLogo}" alt="" width="20" height="18" loading="lazy" decoding="async" onerror="if(this.src.endsWith('.webp')){this.src=this.src.replace('.webp','.png')}else{this.style.display='none'}" style="height:18px;">` : ""}
           <span style="font-family:'Share Tech Mono',monospace;font-size:0.8rem;
             color:#888;text-transform:uppercase;">${match.leagueName}</span>
         </div>
@@ -175,8 +175,9 @@ function renderMatches() {
         <div style="display:flex;align-items:center;gap:12px;flex:1;justify-content:flex-end;">
           <span style="color:#fff;font-family:'Bebas Neue',sans-serif;font-weight:700;
             font-size:1.2rem;text-transform:uppercase;">${activeTeam === "factory" ? "FACTORY" : "KAIZEN"}</span>
-          <img src="Logos/logo.png" alt="" style="height:35px;width:35px;object-fit:contain;"
-            onerror="this.style.display='none'">
+          <img src="Logos/logo.webp" alt="" width="35" height="35" loading="lazy" decoding="async"
+            style="height:35px;width:35px;object-fit:contain;"
+            onerror="if(this.src.endsWith('.webp')){this.src=this.src.replace('.webp','.png')}else{this.style.display='none'}">
         </div>
         <div style="min-width:80px;text-align:center;">
           <span style="background:rgba(255,255,255,0.07);padding:6px 16px;border-radius:4px;
@@ -184,8 +185,9 @@ function renderMatches() {
             border:1px solid rgba(255,255,255,0.1);">${scoreText}</span>
         </div>
         <div style="display:flex;align-items:center;gap:12px;flex:1;justify-content:flex-start;">
-          ${match.opponentLogo ? `<img src="${match.opponentLogo}" alt="${match.opponent}"
-            style="height:35px;width:35px;object-fit:contain;" onerror="this.style.display='none'">` : ""}
+          ${match.opponentLogo ? `<img src="${match.opponentLogo}" alt="${match.opponent}" width="35" height="35"
+            loading="lazy" decoding="async" style="height:35px;width:35px;object-fit:contain;"
+            onerror="if(this.src.endsWith('.webp')){this.src=this.src.replace('.webp','.png')}else{this.style.display='none'}">` : ""}
           <span style="color:#aaa;font-family:'Bebas Neue',sans-serif;font-weight:600;
             font-size:1.2rem;text-transform:uppercase;">${match.opponent}</span>
         </div>
@@ -220,7 +222,7 @@ function buildLeagueFilters() {
 
   const botones = Object.entries(ligas).map(([key, liga]) => `
     <button class="res-filter" data-league="${key}">
-      ${liga.logo ? `<img src="${liga.logo}" alt="" style="height:16px;width:auto;margin-right:6px;vertical-align:middle;" onerror="this.style.display='none'">` : ""}
+      ${liga.logo ? `<img src="${liga.logo}" alt="" height="16" loading="lazy" decoding="async" style="height:16px;width:auto;margin-right:6px;vertical-align:middle;" onerror="if(this.src.endsWith('.webp')){this.src=this.src.replace('.webp','.png')}else{this.style.display='none'}">` : ""}
       ${liga.name}
     </button>
   `).join("");
@@ -314,7 +316,8 @@ function renderSponsors() {
     <div class="sponsor-card reveal">
       <div class="sponsor-logo">
         ${s.logo
-          ? `<img src="${s.logo}" alt="${s.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`
+          ? `<img src="${s.logo}" alt="${s.name}" width="56" height="56" loading="lazy" decoding="async"
+              onerror="if(this.src.endsWith('.webp')){this.src=this.src.replace('.webp','.png')}else{this.style.display='none';this.nextElementSibling.style.display='flex'}">`
           : ""}
         <span class="sponsor-initials" style="${s.logo ? "display:none" : ""}">${s.name.charAt(0)}</span>
       </div>
