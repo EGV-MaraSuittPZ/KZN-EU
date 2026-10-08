@@ -10,7 +10,7 @@
 const matchesData = [
    {
     opponent: "Phantom Legacy JR", opponentLogo: "Logos/.png",
-    ourScore: 0, opponentScore: 0, status: "upcoming",
+    ourScore: 0, opponentScore: 0, status: "upcoming", team: "factory",
     league: "Scrim", leagueName: "Scrim",
     leagueLogo: "", date: "00/10/2026"
   },
