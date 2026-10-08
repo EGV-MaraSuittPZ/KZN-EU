@@ -15,10 +15,10 @@ const rosterData = [
   { name: "Qzteraa",     role: "jugador", position: "", photo: "", instagram: "" },
   { name: "iCanxriio",   role: "jugador", position: "",     photo: "", instagram: "" },
   { name: "Paulita02",   role: "jugador", position: "",     photo: "", instagram: "" },
-  { name: "",            role: "jugador", position: "",     photo: "", instagram: "" },
+  { name: "BwnsxPR",     role: "jugador", position: "",     photo: "", instagram: "" },
+  { name: "FlvwxxPR",    role: "jugador", position: "",     photo: "", instagram: "" },
   { name: "FBI_Ian_07",  role: "jugador", position: "",     photo: "", instagram: "" },
-  { name: "",            role: "jugador", position: "",     photo: "", instagram: "" },
-  { name: "",            role: "jugador", position: "",     photo: "", instagram: "" },
+  { name: "qPrincxNC",   role: "jugador", position: "",     photo: "", instagram: "" },
 
   // ── JUGADORES FACTORY ───────────────────────────────────
   { name: "JotaBe98",      role: "factory", position: "IGL", photo: "", instagram: "" },
@@ -30,7 +30,7 @@ const rosterData = [
   { name: "KarI0s-tc",     role: "factory", position: "",    photo: "", instagram: "" },
   { name: "FrxgerGN",      role: "factory", position: "",    photo: "", instagram: "" },
   { name: "RomeritosLNC",  role: "factory", position: "",    photo: "", instagram: "" },
-  { name: "xRweeze ",      role: "factory", position: "",    photo: "", instagram: "" },
+  { name: " ",      role: "factory", position: "",    photo: "", instagram: "" },
 
   // ── DIRECCIÓN ──────────────────────────────────────────
   { name: "CxpeteeKNZ",   role: "staff", position: "CEO",     photo: "", instagram: "CxpeteeKNZ" },
