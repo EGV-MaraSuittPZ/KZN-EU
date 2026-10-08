@@ -338,6 +338,7 @@ function renderTimeline() {
   const items = [
     { year: "FEB 2026", title: "Nacimiento — Dragons", desc: "El proyecto arranca bajo el nombre Dragons. Primeros jugadores, primeras bases, primer sueño.", highlight: true, badge: "ORIGEN" },
     { year: "JUN 2026", title: "Evolución a KAIZEN", desc: "Nueva gente, nueva identidad. El equipo renace como KAIZEN con más ambición y estructura.", highlight: true, badge: "NUEVO" },
+    { year: "OCT 2026", title: "Creación del KZN Faactory", desc: "Creación del KZN Faactory.", highlight: true, badge: "NUEVO" },
   ];
   list.innerHTML = items.map(item => `
     <div class="tl-item ${item.highlight ? 'tl-highlight ' : ''}reveal">
