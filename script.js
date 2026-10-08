@@ -175,9 +175,9 @@ function renderMatches() {
         <div style="display:flex;align-items:center;gap:12px;flex:1;justify-content:flex-end;">
           <span style="color:#fff;font-family:'Bebas Neue',sans-serif;font-weight:700;
             font-size:1.2rem;text-transform:uppercase;">${activeTeam === "factory" ? "FACTORY" : "KAIZEN"}</span>
-          <img src="Logos/logo.webp" alt="" width="35" height="35" loading="lazy" decoding="async"
+          <img src="Logos/logo.png" alt="" width="35" height="35" loading="lazy" decoding="async"
             style="height:35px;width:35px;object-fit:contain;"
-            onerror="if(this.src.endsWith('.webp')){this.src=this.src.replace('.webp','.png')}else{this.style.display='none'}">
+            onerror="this.style.display='none'">
         </div>
         <div style="min-width:80px;text-align:center;">
           <span style="background:rgba(255,255,255,0.07);padding:6px 16px;border-radius:4px;
