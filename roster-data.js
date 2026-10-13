@@ -18,7 +18,8 @@ const rosterData = [
   { name: "BwnsxPR",     role: "jugador", position: "",     photo: "", instagram: "" },
   { name: "FlvwxxPR",    role: "jugador", position: "",     photo: "", instagram: "" },
   { name: "FBI_Ian_07",  role: "jugador", position: "",     photo: "", instagram: "" },
-  { name: "qPrincxNC",   role: "jugador", position: "",     photo: "", instagram: "" },
+  { name: "Jvxnz7",  role: "jugador", position: "",     photo: "", instagram: "" },
+  { name: "qPrincxNC",   role: "jugador", position: "",     photo: "", instagram: "" }, 
 
   // ── JUGADORES FACTORY ───────────────────────────────────
   { name: "JotaBe98",      role: "factory", position: "IGL", photo: "", instagram: "" },
