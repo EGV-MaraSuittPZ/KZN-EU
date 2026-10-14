@@ -35,5 +35,5 @@ const rosterData = [
 
   // ── DIRECCIÓN ──────────────────────────────────────────
   { name: "CxpeteeKNZ",   role: "staff", position: "CEO",     photo: "", instagram: "CxpeteeKNZ" },
-  { name: "MaraSuitt_PZ", role: "staff", position: "SUB-CEO", photo: "", instagram: "" },
+  { name: "MaraSuitt_PZ", role: "staff", position: "SUB-CEO", photo: "", instagram: "MaraSuitt_PZ" },
 ];
