@@ -9,7 +9,7 @@
 
 const matchesData = [
  {
-    opponent: "Lunatics", opponentLogo: "Logos/.png",
+    opponent: "V zero", opponentLogo: "Logos/.png",
     ourScore: 7, opponentScore: 0, status: "win",
     league: "InvictusEU", leagueName: "InvictusEU",
     leagueLogo: "", date: "18/10/2026"
