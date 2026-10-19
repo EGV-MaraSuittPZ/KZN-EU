@@ -8,17 +8,24 @@
 // ==========================================
 
 const matchesData = [
+ {
+    opponent: "Lunatics", opponentLogo: "Logos/.png",
+    ourScore: 7, opponentScore: 0, status: "win",
+    league: "InvictusEU", leagueName: "InvictusEU",
+    leagueLogo: "", date: "18/10/2026"
+  },
+   
    {
     opponent: "Vora", opponentLogo: "Logos/yn.png",
     ourScore: 5, opponentScore: 7, status: "loss", team: "factory",
     league: "Scrim", leagueName: "Scrim",
-    leagueLogo: "", date: "00/10/2026"
+    leagueLogo: "", date: "11/10/2026"
   },
   {
     opponent: "Lunatics", opponentLogo: "Logos/.png",
     ourScore: 7, opponentScore: 1, status: "win",
     league: "InvictusEU", leagueName: "InvictusEU",
-    leagueLogo: "", date: "00/10/2026"
+    leagueLogo: "", date: "10/10/2026"
   },
 
   {
