@@ -29,7 +29,7 @@ const matchesData = [
   },
 
   {
-    opponent: "HVK", opponentLogo: "Logos/.png",
+    opponent: "HVK", opponentLogo: "Logos/hvk.png",
     ourScore: 4, opponentScore: 7, status: "loss",
     league: "InvictusEU", leagueName: "InvictusEU",
     leagueLogo: "", date: "04/10/2026"
@@ -43,7 +43,7 @@ const matchesData = [
   },
  
  {
-    opponent: "Phantom Legacy", opponentLogo: "Logos/PHleg.webp",
+    opponent: "Phantom Legacy", opponentLogo: "Logos/Phantomlegacy.webp",
     ourScore: 7, opponentScore: 3, status: "win",
     league: "Scrim", leagueName: "Scrim",
     leagueLogo: "", date: "21/09/2026"
