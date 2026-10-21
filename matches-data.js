@@ -50,7 +50,7 @@ const matchesData = [
   },
 
      {
-    opponent: "Vora", opponentLogo: "Logos/yn.webp",
+    opponent: "Vora", opponentLogo: "Logos/vora.webp",
     ourScore: 7, opponentScore: 0, status: "win",
     league: "Scrim", leagueName: "Scrim",
     leagueLogo: "", date: "13/09/2026"
