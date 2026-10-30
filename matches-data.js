@@ -8,6 +8,20 @@
 // ==========================================
 
 const matchesData = [
+  {
+    opponent: "X5", opponentLogo: "Logos/x5.png",
+    ourScore: 0, opponentScore: 0, status: "upcoming",
+    league: "InvictusEU", leagueName: "InvictusEU",
+    leagueLogo: "", date: "31/10/2026"
+  },
+ 
+  {
+    opponent: "Black Reyes, opponentLogo: "Logos/reyes.png",
+    ourScore: 7, opponentScore: 0, status: "win",
+    league: "InvictusEU", leagueName: "InvictusEU",
+    leagueLogo: "", date: "27/10/2026"
+  },
+ 
  {
     opponent: "V zero", opponentLogo: "Logos/vzero.png",
     ourScore: 7, opponentScore: 0, status: "win",
