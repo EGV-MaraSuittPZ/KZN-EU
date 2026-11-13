@@ -34,10 +34,10 @@ const matchesData = [
     leagueLogo: "", date: "8/11/2026"
   },
      {
-    opponent: "", opponentLogo: "Logos/vora.png",
-    ourScore: 5, opponentScore: 7, status: "loss", team: "factory",
-    league: "Scrim", leagueName: "Scrim",
-    leagueLogo: "", date: "11/10/2026"
+    opponent: "", opponentLogo: "Logos/.png",
+    ourScore: 7, opponentScore: 0, status: "win", team: "factory",
+    league: "Tournament of Power, leagueName: "Tournament of Power",
+    leagueLogo: "", date: "8/10/2026"
   },
   {
     opponent: "X5", opponentLogo: "Logos/X5.png",
