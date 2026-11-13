@@ -15,6 +15,18 @@ const matchesData = [
     league: "InvictusEU", leagueName: "InvictusEU",
     leagueLogo: "", date: "14/11/2026"
   },
+    {
+    opponent: "", opponentLogo: "Logos/.png",
+    ourScore: 7, opponentScore: 0, status: "win", team: "factory",
+    league: "Tournament of Power, leagueName: "Tournament of Power",
+    leagueLogo: "", date: "8/10/2026"
+  },
+  {
+    opponent: "Phantom Legacy JR, opponentLogo: "Logos/Phantomlegacy.webp",
+    ourScore: 7, opponentScore: 2, status: "win", team: "factory",
+    league: "Tournament of Power, leagueName: "Tournament of Power",
+    leagueLogo: "", date: "12/11/2026"
+  },
   {
     opponent: "VORA", opponentLogo: "Logos/vora.png",
     ourScore: 8, opponentScore: 7, status: "win",
