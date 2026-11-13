@@ -120,6 +120,26 @@ function renderMvp() {
 let activeStatus = "all";
 let activeLeague = "all";
 let activeTeam = "kaizen";
+let activeRound = "all";
+
+// Fases de eliminatoria (opcional en cada partido: round: "octavos" | "cuartos" | "semifinal" | "final")
+const ROUND_LABELS = {
+  octavos:   "Octavos de final",
+  cuartos:   "Cuartos de final",
+  semifinal: "Semifinal",
+  final:     "Final"
+};
+const ROUND_ORDER = ["octavos", "cuartos", "semifinal", "final"];
+
+function normalizeRound(r) {
+  const v = String(r || "").trim().toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[\s_-]+/g, "");
+  if (v === "octavos" || v === "octavosdefinal") return "octavos";
+  if (v === "cuartos" || v === "cuartosdefinal") return "cuartos";
+  if (v === "semifinal" || v === "semifinales" || v === "semis") return "semifinal";
+  if (v === "final") return "final";
+  return "";
+}
 
 function getActiveTeamMatches() {
   return matchesData.filter(match => (match.team || "kaizen").toLowerCase() === activeTeam);
@@ -134,7 +154,8 @@ function renderMatches() {
   const filtered = teamMatches.filter(m => {
     const okStatus = activeStatus === "all" || m.status === activeStatus;
     const okLeague = activeLeague === "all" || m.league === activeLeague;
-    return okStatus && okLeague;
+    const okRound  = activeRound  === "all" || normalizeRound(m.round) === activeRound;
+    return okStatus && okLeague && okRound;
   });
 
   if (filtered.length === 0) {
@@ -149,6 +170,7 @@ function renderMatches() {
   }
 
   filtered.forEach(match => {
+    const roundKey    = normalizeRound(match.round);
     const isUpcoming  = match.status === "upcoming";
     const scoreText   = isUpcoming ? "VS" : `${match.ourScore} - ${match.opponentScore}`;
     const borderColor = match.status === "win"  ? "#2ecc71"
@@ -167,6 +189,11 @@ function renderMatches() {
           ${match.leagueLogo ? `<img src="${match.leagueLogo}" alt="" width="20" height="18" loading="lazy" decoding="async" onerror="if(this.src.endsWith('.webp')){this.src=this.src.replace('.webp','.png')}else{this.style.display='none'}" style="height:18px;">` : ""}
           <span style="font-family:'Share Tech Mono',monospace;font-size:0.8rem;
             color:#888;text-transform:uppercase;">${match.leagueName}</span>
+          ${roundKey ? `<span class="match-round match-round-${roundKey}" style="font-family:'Share Tech Mono',monospace;
+            font-size:0.7rem;letter-spacing:1px;text-transform:uppercase;padding:2px 8px;border-radius:3px;
+            border:1px solid ${roundKey === "final" ? "#f1c40f" : "rgba(192,0,0,0.6)"};
+            color:${roundKey === "final" ? "#f1c40f" : "#e74c3c"};
+            background:${roundKey === "final" ? "rgba(241,196,15,0.1)" : "rgba(192,0,0,0.1)"};">${ROUND_LABELS[roundKey]}</span>` : ""}
         </div>
         <span style="font-family:'Share Tech Mono',monospace;font-size:0.85rem;color:#666;">
           ${match.date}</span>
@@ -242,6 +269,29 @@ function buildLeagueFilters() {
   });
 }
 
+function buildRoundFilters() {
+  const container = document.getElementById("round-filters");
+  if (!container) return;
+
+  const presentes = new Set(getActiveTeamMatches().map(m => normalizeRound(m.round)).filter(Boolean));
+  if (presentes.size === 0) { container.innerHTML = ""; return; }
+
+  const botones = ROUND_ORDER.filter(r => presentes.has(r)).map(r =>
+    `<button class="res-filter" data-round="${r}">${ROUND_LABELS[r]}</button>`
+  ).join("");
+
+  container.innerHTML = `<button class="res-filter active" data-round="all">Todas las Fases</button>${botones}`;
+
+  container.querySelectorAll(".res-filter").forEach(btn => {
+    btn.addEventListener("click", () => {
+      container.querySelectorAll(".res-filter").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      activeRound = btn.getAttribute("data-round");
+      renderMatches();
+    });
+  });
+}
+
 function initMatchTeamFilters() {
   const container = document.getElementById("match-team-filters");
   if (!container) return;
@@ -251,6 +301,7 @@ function initMatchTeamFilters() {
       activeTeam = button.getAttribute("data-team");
       activeStatus = "all";
       activeLeague = "all";
+      activeRound = "all";
 
       container.querySelectorAll(".match-team-button").forEach(teamButton => {
         const isActive = teamButton === button;
@@ -262,6 +313,7 @@ function initMatchTeamFilters() {
       });
 
       buildLeagueFilters();
+      buildRoundFilters();
       renderMatches();
     });
   });
@@ -548,7 +600,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (ticker) {
     const items = matchesData.map(m => {
       const teamName = (m.team || "kaizen").toLowerCase() === "factory" ? "FACTORY" : "KAIZEN";
-      if (m.status === "upcoming") return `PRÓXIMO: ${teamName} vs ${m.opponent.toUpperCase()} (${m.date})`;
+      const fase = normalizeRound(m.round) ? ` [${ROUND_LABELS[normalizeRound(m.round)].toUpperCase()}]` : "";
+      if (m.status === "upcoming") return `PRÓXIMO: ${teamName} vs ${m.opponent.toUpperCase()}${fase} (${m.date})`;
       if (m.status === "win")      return `✓ ${teamName} ${m.ourScore} - ${m.opponentScore} ${m.opponent.toUpperCase()}`;
       return `✗ ${teamName} ${m.ourScore} - ${m.opponentScore} ${m.opponent.toUpperCase()}`;
     });
@@ -562,6 +615,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderTimeline();
   initMatchTeamFilters();
   buildLeagueFilters();
+  buildRoundFilters();
   renderMatches();
   renderAchievements();
   renderSponsors();

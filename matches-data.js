@@ -5,6 +5,8 @@
 //  league: clave interna (sin espacios)
 //  leagueName: nombre visible
 //  leagueLogo: ruta a logo de liga (opcional)
+//  round: fase del torneo (opcional). Valores: "octavos" | "cuartos" | "semifinal" | "final"
+//         Si no es de eliminatoria, omítelo o déjalo en "".
 // ==========================================
 
 const matchesData = [
@@ -16,21 +18,21 @@ const matchesData = [
     leagueLogo: "", date: "14/11/2026"
   },
   {
-    opponent: "Phantom Legacy JR ", opponentLogo: "Logos/Phantomlegacy.webp",
+    opponent: "Phantom Legacy JR", opponentLogo: "Logos/Phantomlegacy.webp",
     ourScore: 0, opponentScore: 0, status: "upcoming", team: "factory",
-    league: "Tournament of Power, leagueName: "Tournament of Power",
+    league: "Tournament of Power", leagueName: "Tournament of Power",
     leagueLogo: "", date: "00/11/2026"
   },
     {
-    opponent: "Spectrals", opponentLogo: "Logos/.png",
+    opponent: "Spectrals", opponentLogo: "",
     ourScore: 5, opponentScore: 7, status: "loss", team: "factory",
-    league: "Tournament of Power, leagueName: "Tournament of Power",
+    league: "Tournament of Power", leagueName: "Tournament of Power",
     leagueLogo: "", date: "12/10/2026"
   },
   {
-    opponent: "Phantom Legacy JR, opponentLogo: "Logos/Phantomlegacy.webp",
+    opponent: "Phantom Legacy JR", opponentLogo: "Logos/Phantomlegacy.webp",
     ourScore: 7, opponentScore: 2, status: "win", team: "factory",
-    league: "Tournament of Power, leagueName: "Tournament of Power",
+    league: "Tournament of Power", leagueName: "Tournament of Power",
     leagueLogo: "", date: "12/11/2026"
   },
   {
@@ -46,15 +48,15 @@ const matchesData = [
     leagueLogo: "", date: "8/11/2026"
   },
    {
-    opponent: "R.O.V.E", opponentLogo: "Logos/.png",
+    opponent: "R.O.V.E", opponentLogo: "",
     ourScore: 7, opponentScore: 2, status: "win",
     league: "PremierEU", leagueName: "PremierEU",
     leagueLogo: "", date: "8/11/2026"
   },
      {
-    opponent: "Eclipse", opponentLogo: "Logos/.png",
+    opponent: "Eclipse", opponentLogo: "",
     ourScore: 7, opponentScore: 0, status: "win", team: "factory",
-    league: "Tournament of Power, leagueName: "Tournament of Power",
+    league: "Tournament of Power", leagueName: "Tournament of Power",
     leagueLogo: "", date: "8/10/2026"
   },
   {
@@ -65,14 +67,14 @@ const matchesData = [
   },
  
   {
-    opponent: "Black Reyes, opponentLogo: "Logos/reyes.png",
+    opponent: "Black Reyes", opponentLogo: "Logos/reyes.png",
     ourScore: 7, opponentScore: 0, status: "win",
     league: "InvictusEU", leagueName: "InvictusEU",
     leagueLogo: "", date: "27/10/2026"
   },
  
  {
-    opponent: "V zero", opponentLogo: "Logos/vzero.png",
+    opponent: "V zero", opponentLogo: "Logos/Vzero.png",
     ourScore: 7, opponentScore: 0, status: "win",
     league: "InvictusEU", leagueName: "InvictusEU",
     leagueLogo: "", date: "18/10/2026"
@@ -99,7 +101,7 @@ const matchesData = [
   },
   
   {
-    opponent: "R.O.V.E", opponentLogo: "Logos/.png",
+    opponent: "R.O.V.E", opponentLogo: "",
     ourScore: 7, opponentScore: 2, status: "win",
     league: "Scrim", leagueName: "Scrim",
     leagueLogo: "", date: "22/09/2026"
@@ -120,23 +122,26 @@ const matchesData = [
   },
 
    {
-    opponent: "ZND (Final)", opponentLogo: "Logos/znd.webp",
+    opponent: "ZND", opponentLogo: "Logos/znd.webp",
     ourScore: 2, opponentScore: 3, status: "loss",
     league: "Ethenal EU", leagueName: "Ethenal EU ",
+    round: "final",
     leagueLogo: "Logos/ethlegue.webp", date: "22/08/2026"
   },
 
    {
-    opponent: "Wars🇫🇷🇦🇪 (semiF)", opponentLogo: "Logos/wars.webp",
+    opponent: "Wars🇫🇷🇦🇪", opponentLogo: "Logos/wars.webp",
     ourScore: 2, opponentScore: 1, status: "win",
     league: "Ethenal EU", leagueName: "Ethenal EU ",
+    round: "semifinal",
     leagueLogo: "Logos/ethlegue.webp", date: "17/08/2026"
   },
 
     {
-    opponent: "Scrav🇪🇸 (quarterF)", opponentLogo: "Logos/scrav.webp",
+    opponent: "Scrav🇪🇸", opponentLogo: "Logos/scrav.webp",
     ourScore: 2, opponentScore: 0, status: "win",
     league: "Ethenal EU", leagueName: "Ethenal EU ",
+    round: "cuartos",
     leagueLogo: "Logos/ethlegue.webp", date: "10/08/2026"
   },
 
@@ -148,7 +153,7 @@ const matchesData = [
   },
 
        {
-    opponent: "Ascenix", opponentLogo: "Logos/.png",
+    opponent: "Ascenix", opponentLogo: "",
     ourScore: 7, opponentScore: 2, status: "win",
     league: "Scrim", leagueName: "Scrim",
     leagueLogo: "", date: "2/0/2026"
