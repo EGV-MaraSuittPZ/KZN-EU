@@ -8,11 +8,42 @@
 // ==========================================
 
 const matchesData = [
+
   {
-    opponent: "X5", opponentLogo: "Logos/X5.png",
+    opponent: "Lunatics", opponentLogo: "Logos/lunatics.png",
     ourScore: 0, opponentScore: 0, status: "upcoming",
     league: "InvictusEU", leagueName: "InvictusEU",
-    leagueLogo: "", date: "31/10/2026"
+    leagueLogo: "", date: "14/11/2026"
+  },
+  {
+    opponent: "VORA", opponentLogo: "Logos/vora.png",
+    ourScore: 8, opponentScore: 7, status: "win",
+    league: "PremierEU", leagueName: "PremierEU",
+    leagueLogo: "", date: "10/11/2026"
+  },
+ {
+    opponent: "Phantom Legacy", opponentLogo: "Logos/Phantomlegacy.webp",
+    ourScore: 2, opponentScore: 0, status: "win",
+    league: "InvictusEU", leagueName: "InvictusEU",
+    leagueLogo: "", date: "8/11/2026"
+  },
+   {
+    opponent: "R.O.V.E", opponentLogo: "Logos/.png",
+    ourScore: 7, opponentScore: 2, status: "win",
+    league: "PremierEU", leagueName: "PremierEU",
+    leagueLogo: "", date: "8/11/2026"
+  },
+     {
+    opponent: "", opponentLogo: "Logos/vora.png",
+    ourScore: 5, opponentScore: 7, status: "loss", team: "factory",
+    league: "Scrim", leagueName: "Scrim",
+    leagueLogo: "", date: "11/10/2026"
+  },
+  {
+    opponent: "X5", opponentLogo: "Logos/X5.png",
+    ourScore: 5, opponentScore: 7, status: "loss",
+    league: "InvictusEU", leagueName: "InvictusEU",
+    leagueLogo: "", date: "2/11/2026"
   },
  
   {
