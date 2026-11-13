@@ -26,10 +26,10 @@ const rosterData = [
   { name: "MaraSuitt_PZ",  role: "factory", position: "",    photo: "", instagram: "MaraSuitt_PZ" },
   { name: "Wza-Copetee",    role: "factory", position: "",    photo: "", instagram: "CxpeteeKNZ" },
   { name: "inmakevin",     role: "factory", position: "",    photo: "", instagram: "" },
-  { name: "xLakii-",       role: "factory", position: "",    photo: "", instagram: "" },
+  { name: "QNessquik",       role: "factory", position: "",    photo: "", instagram: "" },
   { name: "zDxvid3X",      role: "factory", position: "",    photo: "", instagram: "" },
   { name: "KarI0s-tc",     role: "factory", position: "",    photo: "", instagram: "" },
-  { name: "FrxgerGN",      role: "factory", position: "",    photo: "", instagram: "" },
+  { name: "glipiRZN",      role: "factory", position: "",    photo: "", instagram: "" },
   { name: "RomeritosLNC",  role: "factory", position: "",    photo: "", instagram: "" },
   { name: "LeonLNC",      role: "factory", position: "",    photo: "", instagram: "" },
 
