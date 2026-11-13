@@ -15,11 +15,17 @@ const matchesData = [
     league: "InvictusEU", leagueName: "InvictusEU",
     leagueLogo: "", date: "14/11/2026"
   },
-    {
-    opponent: "", opponentLogo: "Logos/.png",
-    ourScore: 7, opponentScore: 0, status: "win", team: "factory",
+  {
+    opponent: "Phantom Legacy JR ", opponentLogo: "Logos/Phantomlegacy.webp",
+    ourScore: 0, opponentScore: 0, status: "upcoming", team: "factory",
     league: "Tournament of Power, leagueName: "Tournament of Power",
-    leagueLogo: "", date: "8/10/2026"
+    leagueLogo: "", date: "00/11/2026"
+  },
+    {
+    opponent: "Spectrals", opponentLogo: "Logos/.png",
+    ourScore: 5, opponentScore: 7, status: "loss", team: "factory",
+    league: "Tournament of Power, leagueName: "Tournament of Power",
+    leagueLogo: "", date: "12/10/2026"
   },
   {
     opponent: "Phantom Legacy JR, opponentLogo: "Logos/Phantomlegacy.webp",
@@ -46,7 +52,7 @@ const matchesData = [
     leagueLogo: "", date: "8/11/2026"
   },
      {
-    opponent: "", opponentLogo: "Logos/.png",
+    opponent: "Eclipse", opponentLogo: "Logos/.png",
     ourScore: 7, opponentScore: 0, status: "win", team: "factory",
     league: "Tournament of Power, leagueName: "Tournament of Power",
     leagueLogo: "", date: "8/10/2026"
