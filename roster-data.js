@@ -22,10 +22,11 @@ const rosterData = [
   { name: "qPrincxNC",   role: "jugador", position: "",     photo: "", instagram: "" }, 
 
   // ── JUGADORES FACTORY ───────────────────────────────────
-  { name: "JotaBe98",      role: "factory", position: "IGL", photo: "", instagram: "" },
+  { name: "JotaBe98",      role: "factory", position: "CAP-IGL", photo: "", instagram: "" },
   { name: "MaraSuitt_PZ",  role: "factory", position: "",    photo: "", instagram: "MaraSuitt_PZ" },
   { name: "Wza-Copetee",    role: "factory", position: "",    photo: "", instagram: "CxpeteeKNZ" },
   { name: "inmakevin",     role: "factory", position: "",    photo: "", instagram: "" },
+  { name: "ZSenxju",     role: "factory", position: "IGL",    photo: "", instagram: "" },
   { name: "QNessquik",       role: "factory", position: "",    photo: "", instagram: "" },
   { name: "zDxvid3X",      role: "factory", position: "",    photo: "", instagram: "" },
   { name: "KarI0s-tc",     role: "factory", position: "",    photo: "", instagram: "" },
