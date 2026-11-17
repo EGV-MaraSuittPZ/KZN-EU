@@ -12,18 +12,25 @@
 const matchesData = [
 
   {
-    opponent: "Lunatics", opponentLogo: "Logos/lunatics.png",
+    opponent: "HVK", opponentLogo: "Logos/hvk.png",
     ourScore: 0, opponentScore: 0, status: "upcoming",
     league: "InvictusEU", leagueName: "InvictusEU",
-    round: "semifinal",
-    leagueLogo: "", date: "14/11/2026"
+    round: "final",
+    leagueLogo: "", date: "00/11/2026"
   },
-  {
+    {
     opponent: "Phantom Legacy JR", opponentLogo: "Logos/Phantomlegacy.webp",
     ourScore: 0, opponentScore: 0, status: "upcoming", team: "factory",
     league: "Tournament of Power", leagueName: "Tournament of Power",
     round: "final",
     leagueLogo: "", date: "00/11/2026"
+  },
+  {
+    opponent: "Lunatics", opponentLogo: "Logos/lunatics.png",
+    ourScore: 2, opponentScore: 0, status: "win",
+    league: "InvictusEU", leagueName: "InvictusEU",
+    round: "semifinal",
+    leagueLogo: "", date: "14/11/2026"
   },
     {
     opponent: "Spectrals", opponentLogo: "",
